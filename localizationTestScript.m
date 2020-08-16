@@ -1,7 +1,7 @@
-%result = zeros(3,3,4);
-%cost = zeros(3,3,4);
-%optim = zeros(3,3,4);
-%class = zeros(3);
+result = zeros(3,3,4);
+cost = zeros(3,3,4);
+optim = zeros(3,3,4);
+class = zeros(3);
 
 paths = {'syn10','syn11','syn12','syn13','syn14','syn15','syn16','syn17','syn18','syn19',...
 'syn20','syn21','syn22','syn23','syn24','syn25','syn26','syn27','syn28','syn29'};
@@ -12,9 +12,7 @@ classNum = 5;
 
 global contRewards
 contRewards = zeros( classNum );
-dstCntrs = [15 20];
-for ii=2:2
-    i = dstCntrs(ii);
+for i=1:20
     
     if exist(['Results/Localization/' paths{i} 'result.csv'], 'file') == 2
         result = csvread( ['Results/Localization/' paths{i} 'result.csv'] );
@@ -59,4 +57,4 @@ for ii=2:2
     
 end
 
-csvwrite( 'Results/GraphEmbed/sceneClassresL29.csv', class );
+%csvwrite( 'Results/GraphEmbed/sceneClassresL29.csv', class );

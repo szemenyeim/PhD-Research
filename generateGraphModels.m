@@ -12,10 +12,10 @@ opt = 0;
 plainLoss = 0;
 kloss = 0;
 
-% dataName = {'Synthetic10','Synthetic11','Synthetic12','Synthetic13','Synthetic14','Synthetic15','Synthetic16',...
-% 'Synthetic17','Synthetic18','Synthetic19','Synthetic20','Synthetic21','Synthetic22','Synthetic23','Synthetic24',...
-% 'Synthetic25','Synthetic26','Synthetic27','Synthetic28','Synthetic29'};
-dataName = {'Image2','Image3','Image4','Image5','Image6'};
+dataName = {'Synthetic10','Synthetic11','Synthetic12','Synthetic13','Synthetic14','Synthetic15','Synthetic16',...
+ 'Synthetic17','Synthetic18','Synthetic19','Synthetic20','Synthetic21','Synthetic22','Synthetic23','Synthetic24',...
+ 'Synthetic25','Synthetic26','Synthetic27','Synthetic28','Synthetic29'};
+%dataName = {'Image2','Image3','Image4','Image5','Image6'};
 modelName = {'Raw','Vectorial','Matrix'};
 typeName = {'Train','Test'};
 computeName = {'','computing models only'};
@@ -24,8 +24,8 @@ fprintf([ 'Generating graph models for ' dataName{database} ' data, with ' model
 
 fprintf('Reading Data\n');
 
-%catNums = [5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5];
-catNums = [2 3 5 16 6];
+catNums = [5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5];
+%catNums = [2 3 5 16 6];
 
 categoryCnt = catNums(database);
 
@@ -36,8 +36,8 @@ if isTest == 1
     sceneStr = 'scene';
 end
 
-%dummyCnt = [4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4];
-dummyCnt = [4 4 4 4 4 4];
+dummyCnt = [4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4];
+%dummyCnt = [4 4 4 4 4 4];
 
 methodStr = ['noV';'vec';'mtx'];
     
@@ -45,11 +45,11 @@ vectorial = methodNum < 3;
 
 Frac = 0.99;
 
-% paths = {'locDatasets/syn10/','locDatasets/syn11/','locDatasets/syn12/','locDatasets/syn13/','locDatasets/syn14/',...
-%     'locDatasets/syn15/','locDatasets/syn16/','locDatasets/syn17/','locDatasets/syn18/','locDatasets/syn19/',...
-%     'locDatasets/syn20/','locDatasets/syn21/','locDatasets/syn22/','locDatasets/syn23/','locDatasets/syn24/',...
-%     'locDatasets/syn25/','locDatasets/syn26/','locDatasets/syn27/','locDatasets/syn28/','locDatasets/syn29/'};
-paths = {'locDatasets/img2/','locDatasets/img3/','locDatasets/img4/','locDatasets/img5/','locDatasets/img6/'};
+paths = {'locDatasets/syn10/','locDatasets/syn11/','locDatasets/syn12/','locDatasets/syn13/','locDatasets/syn14/',...
+    'locDatasets/syn15/','locDatasets/syn16/','locDatasets/syn17/','locDatasets/syn18/','locDatasets/syn19/',...
+    'locDatasets/syn20/','locDatasets/syn21/','locDatasets/syn22/','locDatasets/syn23/','locDatasets/syn24/',...
+    'locDatasets/syn25/','locDatasets/syn26/','locDatasets/syn27/','locDatasets/syn28/','locDatasets/syn29/'};
+% paths = {'locDatasets/img2/','locDatasets/img3/','locDatasets/img4/','locDatasets/img5/','locDatasets/img6/'};
 
 currPath = paths{database};
     

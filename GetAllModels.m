@@ -18,6 +18,6 @@ for i=1:1
     end
 end
 
-%csvwrite( 'Results/GraphEmbed/objFunsImg.csv', objFun );
-%csvwrite( 'Results/GraphEmbed/cvResImg.csv', cvLoss );
-%csvwrite( 'Results/GraphEmbed/classResImg.csv', classLoss );
+csvwrite( 'Results/GraphEmbed/objFunsImg.csv', objFun );
+csvwrite( 'Results/GraphEmbed/cvResImg.csv', cvLoss );
+csvwrite( 'Results/GraphEmbed/classResImg.csv', classLoss );
