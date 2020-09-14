@@ -66,6 +66,10 @@ The labels for the classification datasets are trivial. Label files are automati
 * **sceneLabels.csv:** Each row contains the category label of the corresponding node.
 * **sceneInstanceLabels.csv:** Contains the Id of the scene the node comes from.
 
+## Graph-Attention baseline
+
+The graph-attention baseline is implemented [here](https://github.com/szemenyeim/GraphAttention).
+
 
 
 
