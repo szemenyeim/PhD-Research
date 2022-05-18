@@ -51,7 +51,7 @@ To run the test for all dataset, embeddings and optimization methods, simply run
 
 ## Dataset
 
-The databases used for this research are avilable [here](http://deeplearning.iit.bme.hu/locDatasets.zip).
+The databases used for this research are avilable [here](https://deeplearning.iit.bme.hu/Public/locDatasets.zip).
 
 ### Dataset format:
 
